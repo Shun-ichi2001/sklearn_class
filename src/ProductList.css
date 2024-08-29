@@ -1,0 +1,128 @@
+.product-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+}
+
+.product-image {
+  max-width: 100px;
+  margin-right: 16px;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+}
+
+.product-name {
+  margin: 0;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #333333;
+}
+
+.product-price {
+  margin: 0;
+  text-align: left;
+  color: #bf0000;
+}
+
+.product-carousel {
+  display: flex;
+  align-items: center;
+  /* 垂直居中对齐内容 */
+  position: relative;
+  /* 使绝对定位的按钮相对于这个容器定位 */
+  width: 100%;
+  overflow: hidden;
+  /* 防止内容溢出 */
+}
+
+.product-list {
+  display: flex;
+  flex-direction: column;
+  /* 垂直排列商品 */
+  /* 商品之间的间距 */
+  overflow-y: auto;
+  /* 仅在垂直方向上支持滚动 */
+  overflow-x: hidden;
+  /* 隐藏水平滚动条 */
+  flex: 1;
+  /* 使商品列表占据中间的空间 */
+  max-height: 400px;
+  /* 设置最大高度，防止商品部分过高 */
+  padding: 0;
+  /* 确保没有额外的内边距 */
+  margin: 0 80px;
+  /* 为左右两侧添加间距，确保按钮不重叠 */
+  box-sizing: border-box;
+  /* 确保 padding 被包含在元素的总宽度和高度中 */
+}
+
+.product-list a:nth-child(odd) {
+  border-bottom: 2px solid #ebebeb;
+  padding-bottom: 20px;
+}
+
+.product-list a:nth-child(even) {
+  padding-top: 20px;
+}
+
+.carousel-button {
+  position: absolute;
+  /* 绝对定位按钮 */
+  top: 42%;
+  /* 确保按钮完全居中 */
+  padding: 8px 16px;
+  margin-left: 0px;
+  cursor: pointer;
+  z-index: 1;
+  /* 确保按钮在商品列表上方 */
+  border: none;
+  /* 可选：去掉按钮的边框 */
+  margin: 0;
+}
+
+.carousel-button:focus {
+  outline: none;
+  /* 去掉焦点时的轮廓 */
+}
+
+.carousel-button-left {
+  left: 0;
+  margin-left: 5px;
+  /* 按钮靠左 */
+}
+
+.carousel-button-right {
+  right: 0;
+  margin-right: 5px;
+  /* 按钮靠右 */
+}
+
+.page-indicator {
+  text-align: center;
+  margin-top: 200px;
+  /* 上の要素との間隔を広げる */
+  margin-bottom: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+
+  /* ページの中央に配置するためのスタイル */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.products-relatedto-rakuten {
+  display: inline-block;
+  border-bottom: 2px solid #Bf0000;
+}

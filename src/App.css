@@ -1,0 +1,281 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.home h1 {
+  font-size: 3.2em;
+}
+
+.home span {
+  color: #BF0000;
+}
+
+/*画像のレイアウト*/
+.example-image {
+  width: 500px;
+  height: auto;
+  border-radius: 8px;
+  padding: 0px;
+  margin-top: -200px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out forwards;
+  opacity: 0;
+  /* 最初は非表示 */
+}
+
+.quiz-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.question-section {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  width: 100%;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #333;
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+
+.final-score {
+  font-size: 3em;
+  color: #007bff;
+  font-weight: bold;
+}
+
+h2,
+h3 {
+  color: #333;
+  font-size: 1.8em;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.get-point span {
+  color: #BF0000;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 1.2em;
+  margin: 10px;
+  cursor: pointer;
+  background-color: #BF0000;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-weight: bold;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* 正しい順路を示すボタンの色 */
+.regular-route {
+  background-color: #BF0000 !important;
+}
+
+.regular-route:hover {
+  background-color: #d60000 !important;
+}
+
+.carousel-button .carousel-button-right {
+  transform: scale(1);
+}
+
+.correct {
+  color: green !important;
+}
+
+.wrong {
+  color: #BF0000 !important;
+}
+
+.feedback-section p {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.wrong-answer {
+  color: #BF0000;
+}
+
+.correct-answer {
+  color: green;
+}
+
+.explanation {
+  color: #333;
+}
+
+.large-feedback {
+  font-size: 10em;
+  /* フィードバックの大きさ */
+  color: #007bff;
+  margin-top: 10px;   /* 上のマージン */
+  margin-bottom: -20px; /* 下のマージン */
+  animation: feedbackAnimation 1s ease-out;
+  /* アニメーションを追加 */
+}
+
+.large-feedback-text {
+  font-size: 3em;
+  /* フィードバックの大きさ */
+  color: #007bff;
+  margin-top: 0px;   /* 上のマージン */
+  margin-bottom: 50px; /* 下のマージン */
+  animation: feedbackAnimation 1s ease-out;
+  /* アニメーションを追加 */
+}
+
+.correct-feedback {
+  color: green;
+}
+
+.wrong-feedback {
+  color: red;
+}
+
+@keyframes feedbackAnimation {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.answer-section button {
+  padding: 12px 24px;
+  font-size: 1.2em;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-weight: bold;
+  color: white;
+  width: 80%;
+}
+
+.option-0 {
+  background-color: #BF0000;
+}
+
+.option-1 {
+  background-color: #BF0000;
+}
+
+.option-2 {
+  background-color: #BF0000;
+}
+
+.option-3 {
+  background-color: #BF0000;
+}
+
+.option-0:hover,
+.option-1:hover,
+.option-2:hover,
+.option-3:hover {
+  background-color: #ff0000;
+  transform: scale(1.05);
+}
+
+.quiz-option-button {
+  opacity: 0;
+  padding: 12px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin: 5px;
+  width: 90%;
+  transition: all 0.3s ease;
+}
+
+.quiz-option-button:hover {
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.score-section {
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin-bottom: 20px;
+}
+
+.score-section h1 {
+  font-size: 2em;
+}
+
+.answer-section-gohome {
+  background-color: #000000;
+  margin-top: 1px;
+  font-size: 0.8em !important;
+  width: 20% !important;
+}
+
+.answer-section-gohome:hover {
+  background-color: #00000080;
+}
+
+.answer-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 30px 0;
+}
+
+.answer-table th,
+.answer-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.answer-table thead {
+  background-color: #3498db;
+  color: white;
+}
+
+.answer-table tbody tr.correct {
+  background-color: #d4edda;
+}
+
+.answer-table tbody tr.wrong {
+  background-color: #f8d7da;
+}

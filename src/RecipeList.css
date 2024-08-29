@@ -1,0 +1,48 @@
+.recipe-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.recipe {
+    display: flex;
+    align-items: center;
+}
+
+.recipe-image {
+    max-width: 100px;
+    margin-right: 16px;
+}
+
+.recipe-title {
+    margin: 0;
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #bf0000;
+
+}
+
+.recipe-description {
+    margin: 0;
+    text-align: left;
+    color: #333333;
+}
+
+.recipe-result {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    flex: 1;
+    max-height: 400px;
+    padding: 0;
+    margin: 0 50px;
+    box-sizing: border-box;
+}
+
+.recipes-relatedto-rakuten {
+    display: inline-block;
+    border-bottom: 2px solid #Bf0000;
+}
